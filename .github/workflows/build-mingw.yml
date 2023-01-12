@@ -16,7 +16,7 @@ jobs:
       tagName: 2.3.1
       mingwTargetZip: soundtouch-${{ github.ref_name }}-mingw64-x86_64-posix-seh-rev0-8.1.0.zip
     steps:
-      - name: git clone tinynurbs
+      - name: git clone
         shell: cmd
         run: git clone --recursive https://codeberg.org/soundtouch/soundtouch.git && cd soundtouch && git checkout ${{ env.tagName }}
         
